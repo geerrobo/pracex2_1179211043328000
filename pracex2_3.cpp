@@ -1,5 +1,6 @@
 #include<iostream>
-
+#include<cstdlib>
+#include<ctime>
 using namespace std;
 char table[8][8];
 
@@ -21,6 +22,12 @@ void showTable(){
 	}
 }
 
-//Write definition of function randomTable() here.
+void randomTable(){
+	for(int i = 0; i < 8; i++){
+		for(int j = 0; j < 8; j++){
+			table[i][j] = rand()%26+65;
+		}		
+	}
+}
 
 
