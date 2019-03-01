@@ -3,8 +3,11 @@ using namespace std;
 
 template <typename T>
 int countIf(T data[],int size,T key){
-	//Write your code here
-
+	int count = 0;
+	for(int i=0;i<size;i++){
+		if(data[i] == key) count++;
+	}
+	return count;
 }
 
 
